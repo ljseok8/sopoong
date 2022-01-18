@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> 가평 소풍 캠핑장</title>
+ 
+   <!-- 1. css초기화 -->
+   <link href="./css/reset.css" rel="stylesheet" type="text/css">
+
+   <!-- 2. 공통서식 -->
+   <link href="./css/base.css" rel="stylesheet" type="text/css">
+
+   <!-- 3. 레이아웃 서식 -->
+   <link href="./css/pc.css" rel="stylesheet" type="text/css">
+
+   <link href="./css/tablet.css" rel="stylesheet" type="text/css">
+   <link href="./css/mobile.css" rel="stylesheet" type="text/css">
+ <!--스와이퍼 슬라이드 서식-->
+ <link href="./css/swiper.css" rel="stylesheet" type="text/css">
+
+ <script src="./js/swiper.js"></script>
+
+<!-- 제이쿼리 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<style>
+  #modal{width: 100%; height: 100%;
+  position: fixed; top:0px; left:0px;
+background-color: rgba(0,0,0,.8);
+display: none;
+z-index: 10000;}
+
+    #popup{position: absolute;
+      top:40%; left:40%;
+      background-color: #fff;
+      width:300px; height:300px;
+       }
+      
+      #popup a{margin: 0px auto; text-align: center;
+      display: block; width: 80px; height:25px;
+    font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+border-radius: 20px;
+border: 1px solid #ccc;}
+      #popup p{line-height: 30px;
+      width:200px;
+      margin: 50px auto;
+      font-size: 16px;
+      font-weight: bold;}
+</style>
+<script>
+ $(document).ready(function(){ 
+  $('#modal').show();
+
+  $('#popup a').click(function(){
+  
+  $('#modal').fadeOut();
+  
+});
+
+
+
+
+ });
+
+</script>
+  </head>
+
+<body>
+   
+<header>
+  <div class="h_inner">
+    <h1><a href="#" title="메인로고"><img src="./images/newlogo.png" alt="메인로고"  class="logo"></a></h1>
+    
+    <a href="#" title="마이메뉴"><img src="./images/user.png" alt="마이메뉴"  class="user"></a>
+
+    <a href="#" title="검색"><img src="./images/find.png" alt="검색" class="find"></a>
+   
+  </div>
+
+  <input type="checkbox" id="tog01">
+
+  <label for="tog01">
+  <img src="./images/bar.png" alt="토글" class="toggle">
+  </label>  
+
+
+   <div class="navi">
+    <label for="tog01" class="close_btn">
+      <img src="./images/btn_close01.png" alt="닫기">
+    </label>
+
+    <ul>         
+      <li><a href="#" title="소개">소개</a>
+        <ul class="sub">
+         <li><a href="#" title="캠핑장소개">캠핑장소개</a></li>
+         <li><a href="#" title="주변관광지">주변관광지</a></li>
+        </ul>
+      </li> 
+    
+      <li><a href="#" title="시설안내">시설안내</a>
+        <ul class="sub">
+         <li><a href="#" title="객실안내">객실안내</a></li>
+         <li><a href="#" title="부대시설">부대시설</a></li>
+         <li><a href="#" title="캠핑장배치도">캠핑장배치도</a></li>
+        </ul>
+      </li> 
+  
+      <li><a href="#" title="이용안내">이용안내</a>
+        <ul class="sub">
+         <li><a href="#" title="이용시간">이용시간</a></li>
+         <li><a href="#" title="이용요금">이용요금</a></li>
+        </ul>
+      </li> 
+  
+      <li><a href="#" title="예약">예약</a>
+        <ul class="sub">
+         <li><a href="#" title="예약주의사항">예약주의사항</a></li>
+         <li><a href="#" title="예약조회/결제">예약조회/결제</a></li>
+        </ul>
+      </li> 
+  
+      <li><a href="#" title="오시는길">오시는길</a>
+        <ul class="sub">
+         <li><a href="#" title="찾아오시는길">찾아오시는길</a></li>
+        </ul>
+      </li> 
+  
+      <li><a href="#" title="고객센터">고객센터</a>
+        <ul class="sub">
+         <li><a href="#" title="공지사항">공지사항</a></li>
+         <li><a href="#" title="자주하는질문">자주하는질문</a></li>
+         <li><a href="#" title="묻고답하기">묻고답하기</a></li>
+         <li><a href="#" title="자유게시판">자유게시판</a></li>
+        </ul>
+      </li> 
+  
+    </ul>   
+   </div>
+</header>
+
+
+ <main>
+    <div class="art01">
+    <article>
+      <h2>메인이미지</h2>
+      <div class="swiper-container main_slide">
+        <div class="swiper-wrapper">
+         <div class="swiper-slide"><img src="./images/camp002.jpg" alt=""  class="img00"></div>
+         <div class="swiper-slide"><img src="./images/camp003.jpg" alt="" class="img00"></div>
+         <div class="swiper-slide"><img src="./images/camp004.jpg" alt="" class="img00"></div>
+         </div>
+      
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      </article> 
+   </div>
+
+<div class="art02">
+   <article>
+     <h2>예약영역</h2>
+    <select class="res01">
+      <option>캠핑구역선택</option>
+      <option>일반사이트</option>
+      <option>글램핑</option>
+      <option>방가로</option>
+      <option>민박</option>
+     </select>
+
+     <select class="res02">
+      <option>1박2일</option>
+      <option>2박3일</option>
+      <option>3박4일</option>
+      <option>4박5일</option>
+     </select>
+
+     <select class="res03">
+      <option>2021년 10월 15일</option>
+      <option>2021년 10월 16일</option>
+      <option>2021년 10월 17일</option>
+      <option>2021년 10월 18일</option>
+      <option>2021년 10월 19일</option>
+      <option>2021년 10월 20일</option>
+     </select>
+     <input type="button" value="실시간 예약하기" class="res04">
+   </article>
+  </div>
+
+   <div class="art03">
+  <article>
+    <h2>퀵메뉴영역</h2>
+  <a href="#" title="오시는길"><img src="./images/road.gif" alt="오시는길" class="qic01"></a>
+  <a href="#" title="공지사항" ><img src="./images/notice.gif" alt="공지사항" class="qic01"></a>
+  <a href="#" title="주변관광지" ><img src="./images/see.gif" alt="주변관광지" class="qic01"></a>
+  <a href="#" title="캠핑장안내도" ><img src="./images/map.gif" alt="캠핑장안내도" class="qic01"></a>
+  <a href="#" title="이용요금" ><img src="./images/pay.gif" alt="이용요금" class="qic01"></a>
+  <a href="#" title="예약하기"><img src="./images/reserve.gif" alt="예약하기" class="qic01"></a>
+    
+  </article>   
+  </div>
+
+<div class="sec04">
+  <p class="p01">시설안내</p>
+<section>
+  <h2>시설안내</h2>
+  <a href="#" title="일반캠핑장"><img src="./images/cite.jpg" alt="일반캠핑장"  class="cite01" ></a>
+  <dl class="p02">
+    <dt class="word01">일반캠핑</dt>
+    <dd>주차장 이용</dd>
+  </dl>
+
+  <a href="#" title="글램핑장" ><img src="./images/gram.jpeg" alt="글램핑장" class="cite02" ></a>
+  <dl class="p03">
+    <dt class="word02">글램핑</dt>
+    <dd>냉난방완비</dd> 
+    <dd>화로, 숯 장작</dd> 
+    <dd>별도구매</dd>
+  </dl>
+
+  <a href="#" title="방가루" ><img src="./images/banggaro.jpeg" alt="방가루" class="cite03"></a>
+  <dl class="p04">
+    <dt class="word03">방가루</dt>
+     <dd>바베큐가능<dd>
+        <dd>냉난방완비</dd>
+      </dl>
+
+  <a href="#" title="민박"><img src="./images/minbak.jpg" alt="민박"  class="cite04" ></a>
+  <dl class="p05">
+    <dt class="word04">민박</dt>
+        <dd>냉난방<dd> 
+      <dd>샤워실</dd> 
+      <dd> 샤워실 완비</dd>
+    </dl>
+</section>
+</div>
+
+<div class="art05">
+  <p class="px01">캠핑장 안내도</p>
+
+  <div>
+    <a href="#" title="위로바로가기"><img src="./images/top.png" alt="위로바로가기" class="top"></a>
+    </div>
+
+  <article>
+   <h2>캠핑장 안내도</h2>
+    <img src="images/navi_03.jpg" alt="캠핑장안내도" class="img02">
+    
+  </article>
+</div>
+
+
+
+     </main>
+
+   <footer>
+    <div class="ft01">
+        <nav>
+         <a href="#" title="개인정보취급방침" class="ft03">개인정보취급방침 </a>
+         <a href="#" title="이용약관" class="ft04">이용약관</a>
+         <a href="#" title="사이트맵" class="ft05">사이트맵 </a>
+         <a href="#" title="메인로고"><img src="./images/새로고투명.png" alt="메인로고"  class="logo02"></a>
+         <a href="#" title="트위터"><img src="./images/twitter.png" alt="트위터"  class="twitter"></a>
+         <a href="#" title="구글"><img src="./images/google.png" alt="구글" class="google"></a>
+         <a href="#" title="페이스북"><img src="./images/facebook.png" alt="페이스북"  class="facebook"></a>
+         <p class="txt00">copyrightⓒ2021 소풍캠핑 All right reserved</p>
+         <p class="txt01">회사주소:경기 가평군 설악면 어비산길 184-147<br><br>
+        관리자 이메일주소:imi8099@naver.com<br><br>사업자번호:000-00-00000</p>
+        </nav>
+    </div> 
+    </footer>
+    
+    <div id="modal">
+      <div id="popup">
+      <p>이 사이트는 스터디 사이트입니다. <br><br>일부 내용 및 이미지 등은 출처가 따로 있음을 밝힙니다.</p>
+      <a href="#" title="닫기">닫기</a>
+    </div>
+    </div>
+
+    <script>
+
+      var swiper = new Swiper(".main_slide", {
+      
+       autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+              effect: "fade",
+
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              pagination: {
+                el: ".swiper-pagination",
+              },
+            });
+      </script>  
+  </body>
+  </html>

@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+@media screen and (min-width:1200px) {
+
+
+header{
+  width:100%;
+}
+.h_inner{
+  width:1200px;height:90px;
+  margin:0 auto;
+  position:relative;
+}
+
+.logo{padding-top:10px;
+width:70px; height: 70px;  }
+.user{
+  position: absolute;
+  top:20px; right:86px;
+  padding: 4px 4px;
+  width:40px;
+  height:40px;
+}
+.find{
+  position: absolute;
+  top:20px; right:21px;
+  padding: 4px 4px;
+  width:40px;
+  height:40px;
+}
+
+
+.navi{
+     width: 100%;
+     height:40px;
+     background-color: #8F9FBF;
+    }
+
+
+.navi>ul{
+width: 1200px ;
+height: 40px;
+margin:0px auto;
+display:flex;
+justify-content: space-around;
+}
+.navi>ul>li{z-index: 1000;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+}
+.navi>ul>li>a{
+color:#ffffff;
+line-height: 40px;
+display:block;
+padding:0px 60px;
+}
+.navi>ul>li>a:hover{
+  font-weight: bold;}
+
+.navi > ul > li:hover > a::after{
+  content:"";
+  display:block;
+  width:100%;
+  height:5px;
+  background-color:#ffffff;
+  
+ } 
+.navi>ul>li:hover> a{
+  
+  background-color:#8F9FBF;
+ }
+ 
+.sub{
+  width:100%;
+  position:absolute;
+  display:none;
+  height:200px;
+  background-color:#8F9FBF;
+}
+.sub>li{
+text-align: center;
+
+}
+.sub>li>a{
+color:#ffffff;
+line-height: 40px;
+
+}
+.navi>ul>li:hover .sub{display: block;
+  
+ }
+
+
+
+.art01>article>h2{display: none;}
+.art01{width: 100%;
+height: 700px;
+margin:0px auto;
+overflow: hidden;
+}
+.img00{ width: 100%;
+height:700px;}
+
+.art02{width: 1200px;
+height:105px;
+margin:0px auto;
+display: flex;
+justify-content: space-around;
+}
+.art02>article>h2{display: none;}
+.res01, .res02, .res03{
+  font-size: 18px;
+  margin:30px 10px;
+  padding : 4px 40px;
+ }
+ 
+.res04{margin-left: 70px;
+padding:2px 110px; 
+font-size: 18px;
+background-color: rgb(206, 203, 203);
+
+
+}
+.art03{width: 100%;
+ height: 140px;
+ background-color: #D5E5F2;}
+
+.art03 > article{
+   width: 1200px;
+   height:140px;
+margin:0px auto;
+display: flex;
+justify-content: space-around;}
+
+.art03>article>h2{display: none;}
+
+.qic01{position: relative;
+  top:20px;
+  width:100px;
+  height:100px;
+}
+
+
+
+.sec04{width: 100%;
+height: 660px;
+}
+
+.sec04 > section{ width: 1200px;
+ height: 630px;
+  margin:0px auto;
+ position: relative;
+ font-size: 16px;
+ line-height: 20px;
+ font-weight: bold;
+ }
+ .sec04>section>h2{display: none;}
+
+ .word01,.word02,.word03, .word04{font-size: 20px;
+padding-bottom: 20px;}
+ .cite01{position: absolute;
+top: 35px; left: 100px;
+width:250px; height:250px;}
+ .cite02{position: absolute;
+top: 35px; left:650px;
+width:250px; height:250px;}
+ .cite03{position: absolute;
+top:330px; left: 100px;
+width:250px; height:250px;}
+ .cite04{position: absolute;
+top:330px; left:650px;
+width:250px; height:250px;}
+
+.p01{width: 100%;
+background-color: #8F9FBF;
+color:#ffffff;
+text-align: center;
+line-height: 30px;
+font-size: 18px;
+}
+
+.p02{position:absolute;
+top: 100px; left:430px;}
+.p03{position: absolute;
+top:100px; right:100px;}
+.p04{position:absolute;
+top: 400px; left:430px;}
+.p05{position: absolute;
+top: 380px; right:100px;}
+
+
+
+.art05{width:100%;
+height: 555px;
+
+}
+.art05>article {width: 1200px;
+ height: 525px;
+ background-color: lightseagreen;
+ margin:0px auto;
+}
+
+.art05>article>h2{display: none;}
+
+.img02{ width:100%; height:525px;}
+
+.px01{width: 100%;
+  background-color: #8F9FBF;
+  color:#ffffff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.top { position: fixed; right: 60px; bottom:150px;
+  width: 48px; height: 48px;
+}
+
+
+.ft01{ width:100%;  
+  height: 140px;
+ background-color: #0D0D0D;
+}
+.ft01>nav {
+  width: 1200px;
+  height : 140px;
+  margin:0px auto;
+  position: relative;
+}
+.ft03,.ft04,.ft05,.txt00,.txt01{color: #b9b9b9;}
+.ft03{
+position: absolute;
+top:20px; left:250px;
+  font-weight: bold;
+}
+.ft04{
+  position: absolute;
+  top:20px; left: 550px;
+  font-weight: bold;
+}
+.ft05{
+  position: absolute;
+  top:20px; left: 850px;
+  font-weight: bold;
+}
+.logo02{
+position:absolute;
+top:50px;left:80px;
+width:70px; height:70px;
+}
+.twitter{
+position:absolute;
+top:60px; right:180px;
+padding: 4px 4px;
+width:40px; height:40px;
+}
+.google{
+position:absolute;
+top:60px; right: 110px;
+padding: 4px 4px;
+width:40px; height:40px;
+}
+.facebook{
+position:absolute;
+top:60px;right:50px;
+padding: 4px 4px;
+width:40px; height:40px;
+}
+.txt00{position:absolute;
+top:114px;left:550px;
+font-weight: bold;
+}
+.txt01{position:absolute;
+  top:60px;left:250px;
+  font-weight: bold;}
+
+}
